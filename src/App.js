@@ -4,14 +4,10 @@ import axios from 'axios';
 // 引入 ECharts 主模块
 import * as echarts from 'echarts';// 引入柱状图
 
-// 1.引入文件
-import optionConfig from './data';
-
 let viewUrl = "https://www.easy-mock.com/mock/5c6ace85d8bc8b31033c36a5/getview";
 
 class EchartsTest extends Component {
   componentDidMount() {
-
     // 1.初始化
     var myChart = echarts.init(document.getElementById('main'), "optionConfig");
 
